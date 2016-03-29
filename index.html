@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS TEST</title>
+
+<frameset cols = "20%,60%,20%">
+<frame id = "LeftFrame"
+	   src = "LeftFrame.html"
+       name = "left"
+	   scrolling = "no"
+	   frameborder = "1"
+	   border = "10"
+	   marginhight = "15"
+	   marginwidth = "15"
+	   noresize
+	   bordercolor = "silver">
+	
+<frame src = "MainFrame.html"
+       name = "main"
+	   scrolling = "no"
+	   frameborder = "1"
+	   border = "10"
+	   marginhight = "15"
+	   marginwidth = "15"
+	   noresize
+	   bordercolor = "silver">
+	   
+<frame src = "RightFrame.html"
+       name = "right"
+	   frameborder = "1"
+	   border = "10"
+	   marginhight = "15"
+	   marginwidth = "15"
+	   noresize
+	   bordercolor = "silver">
+	   
+</frameset>
+
+</head>
+<body>
+<script>
+var firstElem = top.frames["#LeftFrame"].document.getElementById('quest1');
+ firstElem.hide();
+</script>
+</body>
+</html>

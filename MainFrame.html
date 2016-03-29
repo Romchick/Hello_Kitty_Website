@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image: url("http://www.ipicstorage.com/images/hello-kitty/hello_kitty_81.jpg");
+}
+hr { 
+    display: block;
+    border-style: inset;
+    border-width: 2px;
+}
+
+form{
+	font-size: 18px;
+	color: white;
+	position: relative;
+    left: 20%
+	
+}
+
+.headerText{
+	font-size: 40px;
+	color: #334d00;
+	text-align: center;
+}
+
+.questionHeader{
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.questionText{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+#buton{
+	font-size: 20px;
+	width: 100px;  
+	height: 40px
+}
+
+.listOfQuestions{
+	clear: both;
+    display: inline-block;
+    
+    white-space: nowrap;
+}
+
+</style>
+
+<script type="text/javascript" src="jquery-2.2.1.js"></script>
+<script src="LogicScript.js"></script>
+
+</head>
+<body>
+<div id = "textOfHeader"><p class = "headerText"> JavaScript Test</p></div>
+<hr>
+
+<div class = "questionCase"><p class = "questionHeader">Good luck!</p>
+<br>
+<p class = "questionText">To start this test, push "START" button</p>
+<p id = "counter"></p>
+</div>
+<hr>
+
+<form class =" radio" name = "inputPart">
+<input id = "radioA" type="radio" name="answers" value="A" /><span id= "one"></span>
+<br>
+<input id = "radioB" type="radio" name="answers" value="B" /><span id= "two"></span>
+<br>
+<input id = "radioC" type="radio" name="answers" value="C" /><span id= "three"></span>
+<br>
+<input id = "radioD" type="radio" name="answers" value="D" /><span id= "four"></span>
+<br><br>
+</form>
+<form name = "forButton">
+<input id = "buton" type="button" name="next" value="START" />
+</form>
+<!--
+<hr>
+<div> 
+<h3 class = "listOfQuestions" id = "quest1">Question 1 </h3> 
+<h3 class = "listOfQuestions" id = "quest2">Question 2 </h3>
+<h3 class = "listOfQuestions" id = "quest3">Question 3 </h3></div>
+-->
+
+</body>
+</html>
